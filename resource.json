@@ -65,18 +65,22 @@
       "Korean"
     ],
     "queries": [
-      "Trace reconstruction",
-      "trace reconstruction",
-      "뒤섞인 분산 추적 span을 시간순으로 정리하고 부모·중복·경계 오류를 찾는다.",
-      "opentelemetry",
-      "temporal"
+      "distributed trace parent span anomalies critical path 추적 span"
     ],
     "scope": "Primary documentation and repository descriptions were read on the public web. Competitor code, plugins and packaged execution were not exhaustively tested. This is a bounded prior-art review, not a worldwide novelty search.",
     "limitations": [
       "Search results and documentation do not establish universal absence.",
       "Competitor configuration/plugin parity is not exhausted.",
       "No independent end-user interview or deployment evidence."
-    ]
+    ],
+    "proposed_queries": [
+      "Trace reconstruction",
+      "trace reconstruction",
+      "뒤섞인 분산 추적 span을 시간순으로 정리하고 부모·중복·경계 오류를 찾는다.",
+      "opentelemetry",
+      "temporal"
+    ],
+    "query_scope": "One actual bilingual search per resource, grouped in shared cached batches; additional suggested terms are explicitly proposed, not executed."
   },
   "checked_at": "2026-10-24",
   "distinctive_capability": "Offset-normalized nesting checks and sweep-line parallel-span counts. An offline executable can be called by a small model and checked against an explicit task contract.",
@@ -102,7 +106,8 @@
   "validation_results": {
     "worked_cases": 1,
     "evaluation_cases": 1,
-    "root_required_field_rejection": true
+    "root_required_field_rejection": true,
+    "fixture_role": "Development regression fixtures; not an untouched final model evaluation set."
   },
   "external_impact_evidence": [],
   "decision": {
