@@ -1,0 +1,14 @@
+{
+  "name": "@proofnova/trace-reconstruction",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Trace reconstruction",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test.mjs",
+    "example": "node cli.mjs example.json"
+  }
+}

@@ -1,0 +1,2 @@
+#!/usr/bin/env node
+import fs from 'node:fs';import {execute} from './run.mjs';try{const [file,...extra]=process.argv.slice(2);if(!file||extra.length)throw new Error('Usage: node cli.mjs INPUT.json');const stat=fs.statSync(file);if(!stat.isFile()||stat.size>1048576)throw new Error('Input must be a regular JSON file <=1 MiB');console.log(JSON.stringify(execute(JSON.parse(fs.readFileSync(file,'utf8'))),null,2));}catch(e){console.error(JSON.stringify({status:'input-error',code:e.code??'INPUT_ERROR',message:e.message}));process.exitCode=2;}
